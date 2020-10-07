@@ -1,5 +1,10 @@
 # Minigame-Demo
  A Minigame for 2020 Tecent GameDesign Class 
+# Introduction：
+	WASD移动 空格跳跃 K键闪烁
+	设计关卡可能使用到的Prefab已经在Prefab文件夹中，
+	地图、关卡道具均可更改设置
+	具体方法见关卡设计文档Word
 # Update Log And Problem Description：
 	V1.0.0 2020/10/06 
 		Log: 完成第一关及第一关逆向场景搭建，实现人物基本操作及瞬移模块，完成第一关逆向场景逆向人路径回溯
