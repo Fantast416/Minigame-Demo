@@ -67,10 +67,7 @@ public class PlayerController : MonoBehaviour
     void LogPlayerPos(){
         if(!IsReverse){
             m_List.Add(transform.position);
-            Debug.Log(m_List.Capacity);
             m_ListLength++;
-        }else{
-            Debug.Log("2");
         }
     }
 
@@ -139,7 +136,7 @@ public class PlayerController : MonoBehaviour
 
     /*检测是否在地面上*/
     void CheckGrounded(){
-        isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) || myFeet.IsTouchingLayers(LayerMask.GetMask("Platform"));;
     }
 
 
